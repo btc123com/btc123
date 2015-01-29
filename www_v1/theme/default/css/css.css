@@ -1,0 +1,215 @@
+body ,table,tr,td{font-family: "宋体", Verdana, Arial, Helvetica, sans-serif，;font-size: 12px;line-height: 22px;color: #000000;}
+body,p{margin:0px; padding:0px;}
+a{color:#000000; text-decoration: none;}
+body{font:normal 12px/1.5 Arial,Tahoma,Helvetica,sans-serif;}
+.line{ border-bottom:#9CD5FF 1px solid;}
+.bkBlue{ margin-top:12px;border:#9CD5FF 1px solid;}
+
+.menu{  color:#000000; font-size:14px; font-weight:bold;}
+.menu a{color:#000000; font-size:14px; font-weight:bold; text-decoration:none; margin:0px 5px;}
+
+.fontWhite{ color:#FFFFFF; font-size:14px; font-weight:bold;}
+.fontWhite12{ color:#FFFFFF; font-size:12px;}
+.font16{ font-size:16px; font-weight:bold;}
+.fontBlue14{ color:#1038B1; font-size:14px; font-weight:bold;}
+.font14{ font-size:14px;}
+.font14Weight{font-size:14px;font-weight:bold;}
+
+.font12Weight{font-size:12px;font-weight:bold;}
+.fontRedWeight{font-size:12px;font-weight:bold;color:#FF0000;}
+.fontGreenWeight{font-size:12px;font-weight:bold;color:#009A01;}
+
+.fontRed{ color:#FF0000;}
+.fontRed14{ color:#BC0C0C; font-size:14px;}
+
+.red:link,.red:visited{ color:#FF0000; text-decoration:none;}
+.red:hover{ color:#FF0000; text-decoration: underline;}
+
+.blue:link,.blue:visited{ color:#0273FF; text-decoration:none;}
+.blue:hover{ color:#0273FF; text-decoration: underline;}
+
+
+/*列表样式*/
+
+.bk01{ margin:0px auto; margin-top:20px;}
+.bk01 tr td{ text-align:center;}
+
+.bk02{ margin:20px auto;border-top:#3268CC 1px solid;border-left:#3268CC 1px solid;}
+.bk02 tr td{ border-right:#3268CC 1px solid;border-bottom:#3268CC 1px solid; text-align:center;color:#1B3B90; font-size:14px;}
+.bk02 tr td a{color:#1B3B90; font-size:14px; text-decoration:underline; }
+
+
+.bk03{ margin:5px auto;}
+.bk03 tr td{ border-bottom:#EEEEEE 1px solid;font-size:14px; text-indent:20px;}
+.bk03 tr td a{ font-size:14px; text-decoration:none;}
+
+#weathertodayinfo {
+	width:100%;
+}
+
+.weatherDiv1 {
+background:url("/images/wenduji1.gif") no-repeat scroll 25px 30px #FFFFFF;
+float:left;
+height:130px;
+position:relative;
+z-index:0;
+width:150px;
+left:20px;
+text-align:center;
+}
+
+.weatherDiv1 .numN {
+color:#000000;
+font-family:Tahoma;
+font-size:9px;
+left:0;
+line-height:12px;
+position:absolute;
+text-align:right;
+top:42px;
+width:32px;
+}
+.weatherDiv1 p.bg_sk {
+background:none no-repeat scroll 0 0 #99B0D6;
+left:34px;
+position:absolute;
+top:32px;
+width:8px;
+}
+.weatherDiv1 strong  {
+display:block;
+float:right;
+font-size:16px;
+font-weight:bold;
+left:55px;
+margin-right:10px;
+position:absolute;
+text-align:center;
+top:30px;
+width:85px;
+}
+.weatherDiv1 .a {
+color:#000000;
+display:block;
+margin-right:10px;
+margin-top:22px;
+position:absolute;
+right:0;
+text-align:center;
+width:85px;
+}
+.weatherDiv1 span {
+clear:both;
+color:#000000;
+display:block;
+margin-top:100px;
+text-align:center;
+}
+
+.weatherDiv1 b {
+display:block;
+font-weight:bold;
+left:0;
+line-height:30px;
+margin-bottom:15px;
+position:absolute;
+text-align:left;
+top:-30px;
+}
+
+.weatherDiv2 {
+background:url("/images/s.gif") no-repeat scroll 26px 50% #FFFFFF;
+height:140px;
+text-align:center;
+width:150px;
+left:20px;
+margin:5px auto;
+background-repeat:no-repeat;
+}
+
+.weatherDiv2 strong  {
+display:block;
+font-size:14px;
+font-weight:bold;
+margin-bottom:33px;
+margin-top:25px;
+}
+
+.weatherDiv2 span {
+display:block;
+}
+
+#showCityList{
+	display:none;
+	padding-top:15px;
+}
+
+.cityUlList {
+	float:left;
+	list-style:none;
+	margin:0px 0px 0px 10px;
+	padding:0;
+}
+
+.cityUlList li {
+	width:auto;
+	height:22px;
+	line-height:22px;
+	text-align:center;
+	float:left;
+	margin-right:9px;
+}
+
+.cityUlList li a:hover{
+	text-decoration:underline;
+	color:#FF0000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about_menu01{
+font-size:14px;
+font-weight:bold;
+color:#000000;
+
+padding-left:25px;
+height:39px;
+background:url("/images/main/about_left_menu01.gif") 
+}
+
+.about_menu01 a{
+
+color:#ff6600;
+
+
+}
+
+
+.about_menu02{
+font-size:14px;
+font-weight:bold;
+color:#336699;
+padding-left:25px;
+height:39px;
+}
+
+.about_menu02 a{
+
+color:#336699;
+
+
+}
+
+
+
+

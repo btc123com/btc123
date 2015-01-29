@@ -1,0 +1,114 @@
+
+a:link {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+a:hover {
+	color: #ff6600;
+	text-decoration: underline;
+	font-size: 12px;
+}
+a:active {
+	font-size: 12px;
+	color: #000000;
+}
+
+body {
+	margin:0px;
+	font-size:12px;
+	font-family:Verdana, 宋体, sans-serif;
+}
+body,table,div{font-size:12px;}
+.header{background-image:url(../images/nav_bj.gif); background-repeat:repeat-x; height:126px;}
+.logo{padding-left:12px; width:210px;}
+.header p{font-size:12px; background-image:url(../images/sj_bj.gif); background-repeat:no-repeat; height:43px; padding-left:30px;padding-top:6px;}
+.nav{height:42px;}
+.nav ul{margin:0px; padding:0px;}
+.xiaog{background-image:url(../images/nav_an.gif);width:106px; height:42px;}
+.nav ul li{list-style-type:none; display:block; float:left; }
+.nav ul li a{ width:106px; height:28px;  background-repeat:no-repeat;display:block; text-align:center; padding-top:14px; text-decoration:none; font-weight:bold; color:#FFF;}
+.nav ul li a:hover{ background-image:url(../images/nav_an.gif);width:106px; height:42px;  background-repeat:no-repeat;display:block; text-align:center; padding-top:14px; font-weight:bold; color:#000;}
+
+.neirong_bd{border-bottom:#aacbe4 1px solid; border-left:#aacbe4 solid 1px; border-right:#aacbe4 solid 1px; margin-bottom:4px;}
+.neirong_td{border-right:#aacbe4 solid 1px; padding-right:4px;}
+.neirong_input{padding-left:4px;}
+.neirong_input input{border:#a6a6a6 1px solid; width:200px;}
+
+.left_td{border-bottom:#aacbe4 1px solid; border-left:#aacbe4 solid 1px; border-right:#aacbe4 solid 1px;}
+.left_td ul{width:100%; height:auto; padding:0px; margin:0px;}
+.left_td ul li{list-style-type:none; width:194px; height:28px; border-bottom:#999 1px dotted;}
+.left_td ul li a{ width:194px; height:20px; display:block; background-repeat:no-repeat; text-align:center; padding-top:8px; text-decoration:none; color:#000;}
+.left_td ul li a:hover{ width:194px; height:20px; display:block; background-repeat:no-repeat; background-image:url(../images/libj.jpg); background-repeat:no-repeat; text-align:center; padding-top:8px; text-decoration:none; color:#000;}
+
+
+.search{background-color:#daeef8; border:1px #f2fafd solid; width:742px; height:32px;display:block;}
+.ly_td{border-right:#aacbe4 solid 1px; border-top:#aacbe4 solid 1px;background-color: #ffffff;height:30px;line-height:30px;text-align:center;	}
+.ly_Rtd{ border-top:#aacbe4 solid 1px;height:30px;line-height:30px;text-align:center;	}
+
+
+
+.xt_glz{ margin-bottom:4px;}
+.xt_text{padding-left:14px;}
+.xt_qxinput_1{text-align:center;}
+.xt_qxinput{ width:300px; text-align:center;}
+
+
+.tb_tr_title {
+	font-size: 14px;
+	color: #000000;
+	height: 28px;
+	text-indent: 15px;
+	font-weight: bold;	
+}
+
+
+.tb_tr_top {
+	font-size: 12px;
+	color: #000000;
+	height: 28px;
+	text-align:center;	
+	border-right:#aacbe4 solid 0px; 
+	border-top:#aacbe4 solid 1px;
+	background-color: #f4f4f4;
+}
+
+.tb_td01{font-size: 12px;
+	color: #000000;
+	height: 30px;
+	text-align:right;
+	padding-right:5px;	
+	border-top:#aacbe4 solid 1px;
+	border-right:#aacbe4 solid 1px;
+	background-color: #ffffff;}
+.tb_td02{font-size: 12px;
+	color: #000000;
+	height: 30px;
+	padding-left:5px;		
+	border-top:#aacbe4 solid 1px;
+	background-color: #fffffff;}
+
+
+/*left功能菜单*/
+
+.left_menu_title  {
+	font-weight: bold; 
+	color: #000000;
+	position: relative;
+	padding-top: 2px;
+	height:30px;
+	font-size: 14px;
+	text-indent: 35px;
+}
+
+.left_menu ul{width:100%; height:auto; padding:0px; margin:0px;}
+.left_menu ul li{list-style-type:none; width:160px; height:28px; border-bottom:#999 1px dotted;}
+.left_menu li a{ width:160px; height:28px; line-height:28px; display:block; background-repeat:no-repeat;  text-decoration:none; color:#000;text-indent: 35px;}
+.left_menu ul li a:hover{ width:160px; height:28px;line-height:28px;  display:block; background-repeat:no-repeat; background-image:url(../images/libj.jpg); background-repeat:no-repeat; text-decoration:none; color:#ffffff;font-weight: bold; text-indent: 35px;}
+.active{ width:160px; height:28px;line-height:28px;  display:block; background-repeat:no-repeat; background-image:url(../images/libj.jpg); background-repeat:no-repeat; text-decoration:none; color:#ffffff;font-weight: bold; text-indent: 35px;}
+.left_table{border:#aacbe4 1px solid;}

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /templates
+Disallow: /controllers

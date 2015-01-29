@@ -1,0 +1,25 @@
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.ui-widget-overlay { background: #aaaaaa url(../images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x; opacity: .30;filter:Alpha(Opacity=30); }
+.ui-dialog { position: absolute; padding: .5em; width: 395px; overflow: hidden; background:url(../images/dialog_bg.png) no-repeat center top;}
+.ui-dialog .ui-dialog-titlebar { padding: .5em 1em .3em; height:20px; line-height:17px;}
+.ui-dialog .ui-dialog-title { float: left;} 
+.ui-dialog .ui-dialog-titlebar-close { float:right;}
+.ui-dialog .ui-dialog-titlebar-close span {}
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus { padding: 0; }
+.ui-dialog .ui-dialog-content { border: 0; padding: .5em 1em; background: none; overflow: auto; zoom: 1; }
+.ui-dialog .ui-dialog-buttonpane { text-align: left;background-image: none; margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
+.ui-dialog .ui-dialog-buttonpane button { float: right; margin: .5em .4em .5em 0; cursor: pointer; padding: .2em .6em .3em .6em; line-height: 1.4em; width:auto; overflow:visible; }
+.ui-dialog .ui-resizable-se { width: 14px; height: 14px; right: 3px; bottom: 3px; }
+.ui-draggable .ui-dialog-titlebar { cursor: move; }
+.ui-widget { font-family: Lucida Grande, Lucida Sans, Arial, sans-serif; font-size: 1.1em; }
+.ui-widget .ui-widget { font-size: 1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Lucida Grande, Lucida Sans, Arial, sans-serif; font-size: 1em; }
+.ui-widget-content { color: #222222;}
+.ui-widget-content a { color: #222222; }
+.ui-widget-header { color: #ffffff;}
+.ui-widget-header a { color: #ffffff; }
+.ui-corner-all {}
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+.ui-icon-closethick {}
+.ui-icon-close {}
+.ui-icon { width: 32px; height: 16px; background: url(../images/close.gif) no-repeat top center; }
