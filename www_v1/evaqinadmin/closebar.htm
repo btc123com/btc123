@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script language="javascript">
+	flag = true;
+	function shmenu(obj){
+		if(flag){
+			window.parent.document.getElementById('bodyFrame').cols="0,5,*";
+			// window.parent.frames['bodyFrame'].cols="0,5,*";
+			obj.src='images/close_left02.jpg';
+			flag=false;
+		}else{
+			window.parent.document.getElementById('bodyFrame').cols="159,5,*";
+			// window.parent.frames['bodyFrame'].cols="159,5,*";
+			obj.src='images/close_left01.jpg';
+			flag=true;
+		}
+	}
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="style/css.css" type="text/css" rel="stylesheet" />
+</head>
+<body style="background:url(./images/close_left_bg01.jpg) repeat-y">
+<div id="box">
+   <div class="closebar"><img src="images/close_left01.jpg" style="cursor:pointer" onclick="shmenu(this)"/></div>
+</div>

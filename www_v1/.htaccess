@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^btc123\.com$ [NC]
+RewriteRule ^(.*)$ http://www.btc123.com/$1 [R=301,L]

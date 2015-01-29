@@ -1,0 +1,42 @@
+﻿<?php
+/**
+ * 表用途
+ */
+
+$table_use = array(
+    DBPREFIX.'admin_action'=>'后台操作',
+    DBPREFIX.'admin_ad'=>'后台广告管理',
+    DBPREFIX.'admin_ag'=>'配置信息',
+    DBPREFIX.'admin_group'=>'管理员类别',
+    DBPREFIX.'admin_help'=>'后台帮助表',
+    DBPREFIX.'admin_log'=>'后台操作日志',
+    DBPREFIX.'admin_master'=>'后台管理员表',
+    DBPREFIX.'admin_mg'=>'管理员分类',
+    DBPREFIX.'admin_module'=>'后台操作菜单',
+    DBPREFIX.'apply_site'=>'申请收录',
+    DBPREFIX.'defaultsite'=>'默认自定义网址表',
+    DBPREFIX.'defaultsitetype'=>'默认网址分类表',
+    DBPREFIX.'index_setting'=>'首页设置表',
+    DBPREFIX.'members'=>'自定义导航用户表',
+    DBPREFIX.'member_setting'=>'用户设置表',
+    DBPREFIX.'message'=>'留言',
+    DBPREFIX.'search'=>'首页搜索表',
+    DBPREFIX.'search_class'=>'首页搜索分类表',
+    DBPREFIX.'search_keyword'=>'首页搜索关键字表',
+    DBPREFIX.'site'=>'网址表',
+    DBPREFIX.'site_cool'=>'酷站网址',
+    DBPREFIX.'site_famous'=>'名站网址',
+    DBPREFIX.'site_foot'=>'页脚导航网址',
+    DBPREFIX.'site_left'=>'首页左侧显示表',
+    DBPREFIX.'site_setting'=>'SEO设置',
+    DBPREFIX.'site_tool'=>'实用网址',
+    DBPREFIX.'tag_nav_img'=>'自定义导航分类图标',
+    DBPREFIX.'tag_site_nav'=>'用户自定义导航分类',
+    DBPREFIX.'tag_site_url'=>'用户自定义导航网址表',
+    DBPREFIX.'templates'=>'内页模板类',
+    DBPREFIX.'type_cool'=>'酷站分类',
+    DBPREFIX.'type_foot'=>'页脚导航分类',
+    DBPREFIX.'type_left'=>'首页左侧分类',
+    DBPREFIX.'type_site'=>'网址类别',
+);
+?>

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<style>
+	body,p,b,dl,dd,td,th,input,img,form,div,ul,li,h1,h2,h3,h4,h5,h6,span,select{margin:0;padding:0;}
+	img,iframe{border:none;}ol,ul,li{list-style:none;}img,input,label,select{vertical-align:middle;}body{font:normal 12px/1.5 Arial,Tahoma,Helvetica,sans-serif;}
+	a:link,a:visited{text-decoration:none;color:#000;}a:hover{text-decoration:underline;color:#f00;}
+	li{width:615px;}
+	.mzdh_my5w{float:left;width:753px;}.mzdh_my5w td {width:14%;height:30px;text-align:center;font-size:14px;line-height:30px;}
+	.mzdh_my5w dl{float:left;width:752px;}
+	.mzdh_my5w dt{float:left;width:75px;}
+	.mzdh_my5w dd a{float:left;width:96px;height:24px;line-height:24px;text-align:center}
+	.topform {border-bottom:solid 1px #ccc; width:700px;margin:0 auto;}
+	.topform p{text-align: center;padding: 16px 0;font-family: "宋体",Arial;display: block;font-size: 14px;color: #333;}
+</style></HEAD><BODY>
+<div id="urlhistory" class="mzdh_my5w"></div>
+<script type="text/javascript" src="../../static/js/jquery.min.js"></script>
+<script language="javascript">
+$.getJSON("../../i/index.php?c=index&a=getIndex",function(d){if(d==1){var e='<div class="topform"><p>随时随地使用您的个人导航，不再担心收藏网址丢失！<a target="_blank" href="http://bbs.5w.com/thread-113-1-1.html" style="color:#06c">帮助</a></p></div>';e+='<form id="loginForm" name="loginForm" action="../../i/index.php?c=login&act=login" method="post"><ul style="padding:15px 200px; width:620px; overflow:hidden; float:left"><li style="padding:5px 0"><span>用户名：</span><input style="height:23px;line-height:23px;width:252px;_width:230px;border:1px solid #7f9db9;	font-size:14px;	padding-left:6px;background:#fff;" name="tbUserName" type="text" id="tbUserName"/></li><li style="padding:5px 0"><span>密&nbsp;&nbsp;&nbsp;&nbsp;码：</span><input name="tbUserPwd" type="password" id="tbUserPwd" style="height:23px;line-height:23px;width:252px;_width:230px;border:1px solid #7f9db9;	font-size:14px;	padding-left:6px;background:#fff;"/></li><li style="padding:5px 45px"><span>&nbsp;</span><input name="scookie" type="checkbox" value="1" checked="checked" id="scookie"/>&nbsp;记住我</li><li style="padding:5px 44px"><span>&nbsp;</span><input type="button" onclick="login();" name="loginsubmit" value="登 录" style="font-size:14px;height:28px;width:85px;"/><a href="../../i/index.php?a=getpwd" target="_blank" style="color:#06c">忘记密码？</a>&nbsp;没有账号，<a href="../../i/index.php?a=reg" target="_blank" style="color:#06c">立即注册个性首页</a></li></ul></form>'}else{var e='';var count = 0;for(var c in d){e+='<dl><dt><img src="../../static/images/'+d[c].tg+'">&nbsp;&nbsp;<span>'+d[c].te+'</span></dt><dd>';for(var e1 in d[c].ss){if(e1<7)e+='<a target="_blank" href="http://'+d[c].ss[e1].sl+'"><span>'+d[c].ss[e1].se+'</span></a>'}e+='</dd></dl>';}}$("#urlhistory").html(e);});
+function login(){var n=$("#tbUserName").val();var p=$("#tbUserPwd").val();var s=$("#scookie").val();if(n!='' && p!=''){$.getJSON('../../i/index.php?c=login&act=ajaxlogin&n='+n+'&p='+p+'&s='+s,function(json){if(json==1){window.location.reload();}else{alert("登陆失败！请检查你输入的账号和密码！");}});}else{alert("账号或密码不能为空！");}}
+</script></BODY></HTML>

@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="../../static/js/ajax.js"></script>
+<script language="javascript">
+$=function(id){return "string"==typeof id ? document.getElementById(id):id}
+function hide(o){o.style.display='none'}
+function show(o){o.style.display='block'}
+function loadJS(a,d){var b=document.body.appendChild(document.createElement("script"));d="utf-8"||d;b.language="javascript";b.charset=d;b.src=a}
+function SetCookie(c,e,a,f,d){var b=new Date();b.setTime(b.getTime()+30*24*60*60);a=b.toGMTString();f="/";d="";document.cookie=c+"="+escape(e)+("; expires="+a)+("; path="+f)+";"}
+</script>
+<title>天气</title>
+<style type="text/css"> 
+body {font-size:12px; background:none; color:#666; font-family: Arial,  Helvetica,宋体, sans-serif; }
+img { border:0;}
+ul,li,body { padding:0; margin:0;}
+a { color:#666; text-decoration: none; cursor:pointer; }
+a:hover { text-decoration:underline; color:#f00; }
+#detail {float: left;width: 392px;height: 58px;padding: 0;margin: 0;overflow: hidden;}
+#detail th {
+width: 33px;
+text-align: center;
+border-right: 1px solid #ECE9D8;
+font-weight: 100;
+background: #F7FBFF;
+}
+#detail h2, #detail h3, #detail h4 {
+float: left;
+width: 33%;
+font-weight: normal;
+text-align: center;
+font-size: 12px;
+line-height: 18px;
+height: 18px;
+margin:0;padding:0;
+}
+#choose{display:none;width: 415px; height: 23px; text-align: left;line-height: 23px; font-size: 12px; color:#000; float: left; margin: 0; padding: 20px 0px;}
+</style>
+</head><body>
+
+<div  id="detail">天气数据获取中...</div>
+<div  id="choose">
+<div id="prv" style="width:98px;float:left;"><select style="width:99px;" id="province" onchange="getcity(this.value)"></select></div>
+<div id="ct" style="width:98px;float:left;"><select id="city" style="width:99px;"></select></div>
+<div id="zn" style="width:98px;float:left;"><select id="zone" style="width:99px;"></select></div>
+<input type="button" value="保存" onclick="SetCookie('dcity',$('zone').value);SetCookie('s_prov',$('province').value);SetCookie('s_city',$('city').value);window.location.reload()" style="height:20px; "> | <input type="button" value="返回" onclick="rweather()" style="height:20px;"/></div>
+<script language="javascript">
+var tflag = 1;
+function rweather(){
+show($('detail'));
+hide($('choose'));	
+}
+function choosecity(){
+hide($('detail'));
+show($('choose'));
+if(tflag){
+	loadJS("../../weather2.php?a=getZoneInfo&type=0");
+	tflag=0;
+}
+}
+function getWeather(json){
+var str='';
+if(undefined!=json.weatherinfo){
+str += '<table border=0 cellSpacing=0 cellPadding=0 width="100%"><TBODY><TR><TH class=city height=38><a title="查看天气详情" href="http://tianqi.5w.com" target=_blank nowrap="true">'+json.weatherinfo.city+'</a></TH><TD rowSpan=2><a href="http://tianqi.5w.com" target=_blank nowrap="true">';
+str +='<div><h2>今天</strong>&nbsp;&nbsp;'+json.weatherinfo.img1+'</h2><h2>明天</strong>&nbsp;&nbsp;'+json.weatherinfo.img3+'</h2><h2>后天</strong>&nbsp;&nbsp;'+json.weatherinfo.img5+'</h2></div>';
+str +='<h3>'+json.weatherinfo.temp1+'</h3><h3>'+json.weatherinfo.temp2+'</h3><h3>'+json.weatherinfo.temp3+'</h3>';
+str +='<h4>'+json.weatherinfo.weather1+'</h4><h4>'+json.weatherinfo.weather2+'</h4><h4>'+json.weatherinfo.weather3+'</h4>';
+}
+if(str=='') str='<a href="javascript:;" onclick="window.location.reload()">连接超时，请重新获取天气</a>';
+else str+='</a></TD></TR><TR><TH class=fset height=18><A title="更换城市" href="#" onclick="choosecity()">设置</A></TH></TR></TBODY></TABLE>';
+$('detail').innerHTML=str;
+}
+function getZoneInfo(json){
+	var str = '<select style="width:100px;" id="province" onchange="getcity(this.value)">';
+	for(var key in json[1].value){
+		if(json[0].value==key)
+			str += "<option value='"+key+"' selected>"+json[1].value[key]+"</option>";
+		else
+			str += "<option value='"+key+"'>"+json[1].value[key]+"</option>";
+	}
+	str += '</select>';
+	$('prv').innerHTML=str;
+	str = '';
+	str += '<select id="city" style="width:100px;" onchange="getzone(this.value)">';
+	for(var key in json[2].value){
+		str += "<option value='"+key+"'>"+json[2].value[key]+"</option>";
+	}
+	str += '</select>';
+	$('ct').innerHTML=str;
+	str = '';
+	str += '<select id="zone" style="width:100px;">';
+	for(var key in json[3].value){
+		str += "<option value='"+key+"'>"+json[3].value[key]+"</option>";
+	}
+	str += '</select>';
+	$('zn').innerHTML=str;
+}
+function getcity(p){
+	loadJS("../../weather2.php?a=getZoneInfo&type=1&pid="+p+"&callback=getcityFun");
+}
+
+function getzone(p){
+	loadJS("../../weather2.php?a=getZoneInfo&type=2&cid="+p+"&pid="+$('province').value+"&callback=getzoneFun");
+}
+function getcityFun(json){
+	var str='';
+	for(var key in json[0].value){
+		str += "<option value='"+key+"'>"+json[0].value[key]+"</option>";
+	}
+	str = '<select id="city" style="width:100px;" onchange="getzone(this.value)">'+str+'</select>';
+	$('ct').innerHTML=str;
+	str = '';
+	str += '<select id="zone" style="width:100px;">';
+	for(var key in json[1].value){
+		str += "<option value='"+key+"'>"+json[1].value[key]+"</option>";
+	}
+	str += '</select>';
+	$('zn').innerHTML=str;
+}
+function getzoneFun(json){
+	str = '';
+	str += '<select id="zone" style="width:100px;">';
+	for(var key in json[0].value){
+		str += "<option value='"+key+"'>"+json[0].value[key]+"</option>";
+	}
+	str += '</select>';
+	$('zn').innerHTML=str;
+}
+</script>
+<script language="javascript" src="../../weather2.php?a=getWeather"></script>
+</body></html>
